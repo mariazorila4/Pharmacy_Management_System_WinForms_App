@@ -31,13 +31,13 @@
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.btnMedicines = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnPharmacies = new System.Windows.Forms.Button();
+            this.btnSuppliers = new System.Windows.Forms.Button();
+            this.btnOrdersAndItems = new System.Windows.Forms.Button();
+            this.btnEffects = new System.Windows.Forms.Button();
+            this.btnDoctors = new System.Windows.Forms.Button();
+            this.btnPatients = new System.Windows.Forms.Button();
+            this.btnPrescriptions = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             this.btnLogOut.MaximumSize = new System.Drawing.Size(181, 108);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(117, 54);
-            this.btnLogOut.TabIndex = 4;
+            this.btnLogOut.TabIndex = 9;
             this.btnLogOut.Text = "Log out";
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
@@ -72,7 +72,7 @@
             this.btnHelp.MaximumSize = new System.Drawing.Size(181, 108);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(117, 54);
-            this.btnHelp.TabIndex = 5;
+            this.btnHelp.TabIndex = 10;
             this.btnHelp.Text = "Help";
             this.btnHelp.UseVisualStyleBackColor = false;
             // 
@@ -88,118 +88,126 @@
             this.btnMedicines.Location = new System.Drawing.Point(21, 186);
             this.btnMedicines.Name = "btnMedicines";
             this.btnMedicines.Size = new System.Drawing.Size(186, 167);
-            this.btnMedicines.TabIndex = 6;
+            this.btnMedicines.TabIndex = 2;
             this.btnMedicines.Text = "Medicines";
             this.btnMedicines.UseVisualStyleBackColor = false;
+            this.btnMedicines.Click += new System.EventHandler(this.btnMedicines_Click);
             // 
-            // button2
+            // btnPharmacies
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(121)))), ((int)(((byte)(72)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(229)))), ((int)(((byte)(194)))));
-            this.button2.Location = new System.Drawing.Point(255, 186);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 167);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Pharmacies";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnPharmacies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
+            this.btnPharmacies.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
+            this.btnPharmacies.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.btnPharmacies.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(121)))), ((int)(((byte)(72)))));
+            this.btnPharmacies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPharmacies.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPharmacies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(229)))), ((int)(((byte)(194)))));
+            this.btnPharmacies.Location = new System.Drawing.Point(255, 186);
+            this.btnPharmacies.Name = "btnPharmacies";
+            this.btnPharmacies.Size = new System.Drawing.Size(186, 167);
+            this.btnPharmacies.TabIndex = 3;
+            this.btnPharmacies.Text = "Pharmacies";
+            this.btnPharmacies.UseVisualStyleBackColor = false;
+            this.btnPharmacies.Click += new System.EventHandler(this.btnPharmacies_Click);
             // 
-            // button3
+            // btnSuppliers
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(174)))), ((int)(((byte)(66)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.button3.Location = new System.Drawing.Point(499, 186);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(186, 167);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Suppliers";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnSuppliers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
+            this.btnSuppliers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
+            this.btnSuppliers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
+            this.btnSuppliers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(174)))), ((int)(((byte)(66)))));
+            this.btnSuppliers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuppliers.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnSuppliers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.btnSuppliers.Location = new System.Drawing.Point(499, 186);
+            this.btnSuppliers.Name = "btnSuppliers";
+            this.btnSuppliers.Size = new System.Drawing.Size(186, 167);
+            this.btnSuppliers.TabIndex = 4;
+            this.btnSuppliers.Text = "Suppliers";
+            this.btnSuppliers.UseVisualStyleBackColor = false;
+            this.btnSuppliers.Click += new System.EventHandler(this.btnSuppliers_Click);
             // 
-            // button4
+            // btnOrdersAndItems
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
-            this.button4.Location = new System.Drawing.Point(733, 186);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 167);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Orders and items";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnOrdersAndItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.btnOrdersAndItems.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.btnOrdersAndItems.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnOrdersAndItems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnOrdersAndItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdersAndItems.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOrdersAndItems.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
+            this.btnOrdersAndItems.Location = new System.Drawing.Point(733, 186);
+            this.btnOrdersAndItems.Name = "btnOrdersAndItems";
+            this.btnOrdersAndItems.Size = new System.Drawing.Size(186, 167);
+            this.btnOrdersAndItems.TabIndex = 5;
+            this.btnOrdersAndItems.Text = "Orders and items";
+            this.btnOrdersAndItems.UseVisualStyleBackColor = false;
+            this.btnOrdersAndItems.Click += new System.EventHandler(this.btnOrdersAndItems_Click);
             // 
-            // button5
+            // btnEffects
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(121)))), ((int)(((byte)(72)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(229)))), ((int)(((byte)(194)))));
-            this.button5.Location = new System.Drawing.Point(21, 397);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(186, 167);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Effects";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnEffects.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
+            this.btnEffects.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
+            this.btnEffects.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.btnEffects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(121)))), ((int)(((byte)(72)))));
+            this.btnEffects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEffects.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnEffects.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(229)))), ((int)(((byte)(194)))));
+            this.btnEffects.Location = new System.Drawing.Point(21, 397);
+            this.btnEffects.Name = "btnEffects";
+            this.btnEffects.Size = new System.Drawing.Size(186, 167);
+            this.btnEffects.TabIndex = 1;
+            this.btnEffects.Text = "Effects";
+            this.btnEffects.UseVisualStyleBackColor = false;
+            this.btnEffects.Click += new System.EventHandler(this.btnEffects_Click);
             // 
-            // button6
+            // btnDoctors
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(174)))), ((int)(((byte)(66)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.button6.Location = new System.Drawing.Point(255, 397);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(186, 167);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Doctors";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnDoctors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
+            this.btnDoctors.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
+            this.btnDoctors.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
+            this.btnDoctors.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(174)))), ((int)(((byte)(66)))));
+            this.btnDoctors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoctors.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDoctors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.btnDoctors.Location = new System.Drawing.Point(255, 397);
+            this.btnDoctors.Name = "btnDoctors";
+            this.btnDoctors.Size = new System.Drawing.Size(186, 167);
+            this.btnDoctors.TabIndex = 6;
+            this.btnDoctors.Text = "Doctors";
+            this.btnDoctors.UseVisualStyleBackColor = false;
+            this.btnDoctors.Click += new System.EventHandler(this.btnDoctors_Click);
             // 
-            // button7
+            // btnPatients
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
-            this.button7.Location = new System.Drawing.Point(499, 397);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(186, 167);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "Patients";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnPatients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.btnPatients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPatients.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPatients.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
+            this.btnPatients.Location = new System.Drawing.Point(499, 397);
+            this.btnPatients.Name = "btnPatients";
+            this.btnPatients.Size = new System.Drawing.Size(186, 167);
+            this.btnPatients.TabIndex = 7;
+            this.btnPatients.Text = "Patients";
+            this.btnPatients.UseVisualStyleBackColor = false;
+            this.btnPatients.Click += new System.EventHandler(this.btnPatients_Click);
             // 
-            // button8
+            // btnPrescriptions
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(229)))), ((int)(((byte)(194)))));
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(229)))), ((int)(((byte)(194)))));
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(229)))), ((int)(((byte)(149)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
-            this.button8.Location = new System.Drawing.Point(733, 397);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(186, 167);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "Prescription";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnPrescriptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(229)))), ((int)(((byte)(194)))));
+            this.btnPrescriptions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(229)))), ((int)(((byte)(194)))));
+            this.btnPrescriptions.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
+            this.btnPrescriptions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(229)))), ((int)(((byte)(149)))));
+            this.btnPrescriptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrescriptions.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPrescriptions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
+            this.btnPrescriptions.Location = new System.Drawing.Point(733, 397);
+            this.btnPrescriptions.Name = "btnPrescriptions";
+            this.btnPrescriptions.Size = new System.Drawing.Size(186, 167);
+            this.btnPrescriptions.TabIndex = 8;
+            this.btnPrescriptions.Text = "Prescription";
+            this.btnPrescriptions.UseVisualStyleBackColor = false;
+            this.btnPrescriptions.Click += new System.EventHandler(this.btnPrescriptions_Click);
             // 
             // label2
             // 
@@ -219,13 +227,13 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(69)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(946, 606);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnPrescriptions);
+            this.Controls.Add(this.btnPatients);
+            this.Controls.Add(this.btnDoctors);
+            this.Controls.Add(this.btnEffects);
+            this.Controls.Add(this.btnOrdersAndItems);
+            this.Controls.Add(this.btnSuppliers);
+            this.Controls.Add(this.btnPharmacies);
             this.Controls.Add(this.btnMedicines);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnLogOut);
@@ -242,13 +250,13 @@
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button btnMedicines;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnPharmacies;
+        private System.Windows.Forms.Button btnSuppliers;
+        private System.Windows.Forms.Button btnOrdersAndItems;
+        private System.Windows.Forms.Button btnEffects;
+        private System.Windows.Forms.Button btnDoctors;
+        private System.Windows.Forms.Button btnPatients;
+        private System.Windows.Forms.Button btnPrescriptions;
         private System.Windows.Forms.Label label2;
     }
 }

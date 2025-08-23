@@ -27,30 +27,32 @@ namespace WindowsFormsApp1
             };
         }
 
+        //if the user has an account, they are sent to the login page
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LogInForm frmL = new LogInForm();
-            frmL.FormClosed += FrmL_FormClosed;
-            frmL.Show();
+            this.Hide();//hide this form
+            LogInForm frmL = new LogInForm();//create a new instance of LogInForm
+            frmL.FormClosed += FrmL_FormClosed;// attach an event handler to the FormClosed event
+            frmL.Show();// show the LogInForm
         }
 
-        private void FrmL_FormClosed(object sender, FormClosedEventArgs e)
+        private void FrmL_FormClosed(object sender, FormClosedEventArgs e)//LogInForm closed event handler
         {
-            this.Close();
+            this.Close();// close the current form (Form1)
         }
 
+        //if the user doesn't have an account, they are sent to the sign up page
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            SignUpForm frmS = new SignUpForm();
-            frmS.FormClosed += FrmS_FormClosed;
-            frmS.Show();
+            this.Hide();// hide this form
+            SignUpForm frmS = new SignUpForm();// create a new instance of SignUpForm
+            frmS.FormClosed += FrmS_FormClosed;// attach an event handler to the FormClosed event
+            frmS.Show();// show the SignUpForm
         }
 
-        private void FrmS_FormClosed(object sender, FormClosedEventArgs e)
+        private void FrmS_FormClosed(object sender, FormClosedEventArgs e)// SignUpForm closed event handler
         {
-            this.Close();
+            this.Close();// close the current form (Form1)
         }
     }
 }
