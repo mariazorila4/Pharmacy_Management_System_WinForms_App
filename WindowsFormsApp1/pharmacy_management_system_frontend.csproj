@@ -120,6 +120,12 @@
     <Compile Include="SuppliersForm.Designer.cs">
       <DependentUpon>SuppliersForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DoctorsForm.resx">
+      <DependentUpon>DoctorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectsForm.resx">
+      <DependentUpon>EffectsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +134,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicinesForm.resx">
+      <DependentUpon>MedicinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersAndItemsForm.resx">
+      <DependentUpon>OrdersAndItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsForm.resx">
+      <DependentUpon>PatientsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmaciesForm.resx">
+      <DependentUpon>PharmaciesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrescriptionsForm.resx">
+      <DependentUpon>PrescriptionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -140,6 +161,9 @@
     </Compile>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersForm.resx">
+      <DependentUpon>SuppliersForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

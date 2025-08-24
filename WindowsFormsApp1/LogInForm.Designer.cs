@@ -136,6 +136,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.panel1);
             this.Name = "LogInForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogInForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

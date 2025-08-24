@@ -239,6 +239,7 @@
             this.Controls.Add(this.btnLogOut);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(121)))), ((int)(((byte)(115)))));
             this.Name = "HomePageForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomePageForm";
             this.ResumeLayout(false);
             this.PerformLayout();

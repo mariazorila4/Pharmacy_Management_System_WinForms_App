@@ -16,5 +16,19 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        // back button to go to HomePageForm
+        private void btnHomePage_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // hide this form
+            HomePageForm frmH = new HomePageForm(); // create a new instance of HomePageForm
+            frmH.FormClosed += FrmH_FormClosed; // attach an event handler to the FormClosed event
+            frmH.Show(); // show the HomePageForm
+        }
+
+        private void FrmH_FormClosed(object sender, FormClosedEventArgs e)// HomePageForm closed event handler
+        {
+            this.Close(); // close the current form (DoctorsForm)
+        }
     }
 }
